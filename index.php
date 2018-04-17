@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter Checker</title>
+	<style>
+	*{font-family: arial;}
+</style>
+</head>
+<body>
    <script type="text/javascript">
 function changeText2(){
     var userInput = document.getElementById('userInput').value;
@@ -6,8 +15,10 @@ function changeText2(){
     lnk.innerHTML = lnk.href;
 }
 </script>
-
-Check: <a href="" id=lnk></a> <br>
+<center><h1>Twitter Checker</h1></center>
+<center>Check: <a href="" id=lnk></a> <br>
 <input type='text' id='userInput' placeholder="Check" /><br></br>
-<button onclick='changeText2()'/>Check this account</button>
-<br></br>
+<button onclick='changeText2()'/>Check this account</button></center>
+
+</body>
+</html>
