@@ -17,7 +17,7 @@
 
 }</script>
 <div id="textDiv"></div> 
-<img src="http://php.eclipseemu.me/twitter/?id=<?php echo $_GET['name']; ?>" onerror="check(); this.style.display='none';"/>
+<img src="pfp/?id=<?php echo $_GET['name']; ?>" onerror="check(); this.style.display='none';"/>
 
 
 
