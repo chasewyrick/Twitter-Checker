@@ -23,14 +23,14 @@
 
     document.getElementById("check").innerHTML = "Twitter user <?php echo $_GET['name']; ?> does not exist or is suspended/deactivated.<br> Re-checking in 5 seconds";
 
-
+    window.setInterval(function(){
+    window.location.href = "check.php?name=<?php echo $_GET['name']; ?>";
+}, 5000);
    
 
     var text = div.textContent; 
 
-    window.setInterval(function(){
-    window.location.href = "check.php?name=<?php echo $_GET['name']; ?>";
-}, 5000);}
+}
 
 
 
