@@ -21,7 +21,7 @@
 	function check()
 {
 
-    document.getElementById("check").innerHTML = "Twitter user <?php echo $_GET['name']; ?> does not exist or is suspended/deactivated.<br> Re-checking in 5 seconds";
+    document.getElementById("check").innerHTML = "Twitter user <?php echo $_GET['name']; ?> does not exist or is suspended/deactivated.<br> Re-checking in 5 seconds <audio controls style='visibility: hidden; position: fixed;' autoplay><source src='oof.mp3' type='audio/ogg'></audio>";
 
     window.setInterval(function(){
     window.location.href = "check.php?name=<?php echo $_GET['name']; ?>";
@@ -36,6 +36,7 @@
 
 </script>
 <center>
+	
 	<h1>Twitter Checker</h1>
 	<div style='background-color: lightblue; padding: 16px 0px; border-radius: 10px;' id="check"></div>
 </center>
